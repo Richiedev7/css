@@ -6,7 +6,7 @@ img {
 }
 .container {
   background-color: rgb(14, 96, 5);
-  color: gold;
+  color: blue;
   height: 700px;
   width: 700px;
   background-origin: 30px;
@@ -19,10 +19,43 @@ body {
 }
 
 #navbar {
-  background-color: rgb(14, 96, 5);
-  color: gold;
-  height: 700px;
-  width: 700px;
+  background-color: black;
+  display: flex;
+  color: green;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-size: 16px;
+}
+
+#right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#right > a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#right > button {
+  background-color: rgb(53, 50, 50);
+  border: 1px solid gray;
+  font-size: 18px;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#right > button:hover {
+  background-color: gray;
+}
+
+#right > a:hover {
+  color: grey;
+  text-decoration: underline;
 }
 
 #box {
@@ -33,7 +66,100 @@ body {
   font-style: oblique;
   text-decoration: overline underline;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   word-spacing: 16x;
-  line-height: 5px;
+  line-height: 30px;
+}
+
+#box-container {
+  background-color: red;
+}
+.box1 {
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+}
+.box2 {
+  background-color: coral;
+  height: 300px;
+  width: 300px;
+  /* display: none ; */
+  visibility: hidden;
+}
+.box3 {
+  background-color: chartreuse;
+  height: 300px;
+  width: 300px;
+}
+
+#inline > p {
+  background-color: azure;
+  display: inline; /*this will make the display inline  */
+}
+
+#block > a {
+  height: 900px;
+  width: 900px;
+  font-size: 30px;
+  color: white;
+  background-color: red;
+  display: block;
+}
+
+#inline-block > span {
+  height: 20rem;
+  width: 20rem;
+  font-size: 50px;
+  background-color: blue;
+  color: white;
+  display: inline-block; /* this will make the element inline-block */
+}
+
+/*p{
+  color: red;
+  font-size: 20px;
+} */
+
+.descendant p {
+  color: red;
+  font-size: 20px;
+}
+
+#texts {
+  background-color: red;
+  color: black;
+  font-size: 20px;
+}
+
+#texts:hover {
+  background-color: red;
+  color: white;
+  width: fit-content;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#h2:hover {
+  background-color: blue;
+  color: brown;
+  text-decoration: underline;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#Flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: aquamarine;
+  height: 100vh;
+  width: 100vw;
+}
+
+#Flex > p {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  color: white;
 }
