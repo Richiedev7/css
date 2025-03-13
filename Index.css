@@ -26,7 +26,8 @@ body {
   padding: 20px 30px;
   font-size: 16px;
   position: sticky;
-  top: 65px;
+  top: 0;
+  z-index: 10;
   
 }
 
@@ -241,7 +242,7 @@ body {
 
 #sticky-h1 {
   position: sticky;
-  top: 0;
+  top: 70px;
   background-color: rgb(5, 5, 5);
   color: white;
   padding: 10px;
@@ -253,7 +254,7 @@ body {
 
 #A > h2 {
   position: sticky;
-  top: 65px;
+  top: 130px;
   background-color: blue;
   padding: 10px;
 }
@@ -264,7 +265,7 @@ body {
 
 #B > h2 {
   position: sticky;
-  top: 65px;
+  top: 130px;
   background-color: red;
   padding: 10px;
 }
@@ -273,7 +274,7 @@ body {
 }
 #C > h2 {
   position: sticky;
-  top: 65px;
+  top: 130px;
   background-color: yellow;
   padding: 10px;
 }
