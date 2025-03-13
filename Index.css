@@ -12,7 +12,7 @@ img {
   background-origin: 30px;
 }
 body {
-  background-image: url("https://plus.unsplash.com/premium_photo-1686723087767-323c7b87c390?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1734899889244-37963ab66ca4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,6 +25,9 @@ body {
   justify-content: space-between;
   padding: 20px 30px;
   font-size: 16px;
+  position: sticky;
+  top: 65px;
+  
 }
 
 #right {
@@ -162,4 +165,115 @@ body {
   height: 100px;
   width: 100px;
   color: white;
+}
+
+#position > section {
+  height: 100vh;
+  width: 100vw;
+}
+#relative {
+  background: darkblue;
+}
+#relative-box {
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+}
+#fixed {
+  background-color: red;
+  position: relative;
+}
+#fixed-box {
+  background-color: chartreuse;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  z-index: 1;
+}
+#absolute {
+  background-color: brown;
+  position: relative;
+}
+#absolute-box {
+  background-color: ivory;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+#sticky {
+  background-color: cornflowerblue;
+  position: relative;
+}
+#sticky-box {
+  background-color: darkgreen;
+  height: 100px;
+  width: 100px;
+  position: sticky;
+  z-index: 3;
+  top: 30px;
+}
+#static {
+  background-color: yellow;
+  position: relative;
+}
+#static-box {
+  background-color: darkolivegreen;
+  height: 100px;
+  width: 100px;
+  position: static;
+  z-index: 4;
+}
+
+#contact-list {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#sticky-h1 {
+  position: sticky;
+  top: 0;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  padding: 10px;
+  z-index: 2;
+}
+#A {
+  position: relative;
+}
+
+#A > h2 {
+  position: sticky;
+  top: 65px;
+  background-color: blue;
+  padding: 10px;
+}
+
+#B {
+  position: relative;
+}
+
+#B > h2 {
+  position: sticky;
+  top: 65px;
+  background-color: red;
+  padding: 10px;
+}
+#C {
+  position: relative;
+}
+#C > h2 {
+  position: sticky;
+  top: 65px;
+  background-color: yellow;
+  padding: 10px;
 }
